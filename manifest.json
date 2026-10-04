@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Browser Copilot Live Safe",
+  "version": "0.2.0",
+  "description": "AI browser copilot แบบสิทธิ์น้อยที่สุด: อ่านแท็บที่ผู้ใช้เลือก, allowlist, approval gate และ audit log",
+  "permissions": ["activeTab", "scripting", "storage", "sidePanel"],
+  "host_permissions": ["http://127.0.0.1:8787/*"],
+  "background": {"service_worker": "service-worker.js"},
+  "action": {"default_title": "เปิด Browser Copilot Live"},
+  "side_panel": {"default_path": "sidepanel.html"}
+}
